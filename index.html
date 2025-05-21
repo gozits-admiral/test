@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        nav table {
+            width: 100%;
+        }
+        nav td {
+            vertical-align: middle;
+        }
+        nav .menu a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 40px;
+        }
+
+        .welcome h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            margin-bottom: 10px;
+        }
+
+        .welcome a {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .about h1, .portfolio h1 {
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .box {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1 1 30%;
+            min-width: 200px;
+        }
+
+        .portfolio-items {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            width: 350px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .portfolio-item h3 {
+            margin: 10px 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Section 1: Menu -->
+<table width="100%" border="0">
+    <tr>
+        <td colspan="2">
+            <nav>
+                <table>
+                    <tr>
+                        <td><strong>Brand</strong></td>
+                        <td align="right" class="menu">
+                            <a href="#header">Header</a>
+                            <a href="#about">Biodata</a>
+                            <a href="#portfolio">Portopolio</a>
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+        </td>
+    </tr>
+
+    <!-- Section 2: Welcome -->
+    <tr>
+        <td colspan="2" class="section welcome" id="header">
+            <table width="100%">
+                <tr>
+                    <td width="50%" valign="top">
+                        <h2>Selamat Datang di Web Saya</h2>
+                        <p>Ini adalah contoh header dengan Kolom berisi teks seperti ini.</p>
+                        <a href="#">Pelajari Lebih Lanjut</a>
+                    </td>
+                    <td align="right">
+                        <img src="https://via.placeholder.com/600x400" alt="Gambar Welcome" width="600" height="400">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Section 3: Biodata -->
+    <tr>
+        <td colspan="2" class="section about" id="about">
+            <h1>About Me</h1>
+            <p>A Brief Introduction about myself</p>
+            <table width="100%">
+                <tr>
+                    <td colspan="2">
+                        <table width="100%">
+                            <tr>
+                                <td class="box">Fullname</td>
+                                <td class="box">Education</td>
+                                <td class="box">Pekerjaan</td>
+                            </tr>
+                            <tr>
+                                <td class="box">Contact</td>
+                                <td class="box">Hobi</td>
+                                <td class="box">Alamat</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Section 4: Portofolio -->
+    <tr>
+        <td colspan="2" class="section portfolio" id="portfolio">
+            <h1>Portopolio</h1>
+            <table width="100%">
+                <tr>
+                    <td class="portfolio-item">
+                        <img src="https://via.placeholder.com/350x200" alt="Proyek 1">
+                        <h3>Proyek 1</h3>
+                        <p>Deskripsi Proyek1</p>
+                    </td>
+                    <td class="portfolio-item">
+                        <img src="https://via.placeholder.com/350x200" alt="Proyek 2">
+                        <h3>Proyek 2</h3>
+                        <p>Deskripsi Proyek2</p>
+                    </td>
+                    <td class="portfolio-item">
+                        <img src="https://via.placeholder.com/350x200" alt="Proyek 3">
+                        <h3>Proyek 3</h3>
+                        <p>Deskripsi Proyek3</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
